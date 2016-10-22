@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    tools:context="shenaiting.map.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:id="@+id/bt4"
+        android:layout_below="@+id/bmapView"
+        android:layout_alignParentLeft="true"
+        android:textSize="8dp"
+        android:text="send message"
+        />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:id="@+id/bt5"
+        android:layout_below="@+id/bmapView"
+        android:layout_toRightOf="@+id/bt4"
+        android:text="reply my friend"
+        android:textSize="8dp"
+        />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:id="@+id/bt6"
+        android:layout_below="@+id/bmapView"
+        android:layout_toRightOf="@+id/bt5"
+        android:text="reflash location"
+        android:textSize="8dp"
+        />
+
+    <ImageView
+        android:src="@drawable/em"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:id="@+id/im1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt5"
+        />
+
+    <ImageView
+        android:src="@drawable/fri"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:id="@+id/im2"
+        android:layout_below="@+id/bt5"
+        android:layout_toRightOf="@+id/im1"
+        android:layout_alignTop="@id/im1"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
